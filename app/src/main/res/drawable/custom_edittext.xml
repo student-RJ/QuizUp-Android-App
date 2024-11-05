@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F0F0F0"/> <!-- Light grey background to make the text visible -->
+    <corners android:radius="10dp"/>
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/darker_gray"/> <!-- Border for visibility -->
+</shape>
