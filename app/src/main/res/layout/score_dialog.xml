@@ -1,56 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:gravity="center"
+    android:layout_height="match_parent"
     android:padding="16dp"
-    android:layout_height="wrap_content">
 
-    <TextView
+    android:gravity="center">
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/scoreProgressIndicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Congrats! You have passed"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:id="@+id/score_title"/>
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginBottom="8dp" />
 
-    <RelativeLayout
+    <!-- Score Title -->
+    <TextView
+        android:id="@+id/scoreTitle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <com.google.android.material.progressindicator.CircularProgressIndicator
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/score_progress_indicator"
-            android:layout_centerVertical="true"
-            app:trackColor="@color/gray"
-            tools:progress="60"
-            app:trackCornerRadius="20dp"
-            app:trackThickness="8dp"
-            app:indicatorSize="90dp"/>
+        android:layout_height="wrap_content"
+        android:text="Quiz Result"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Score Percentage -->
+    <TextView
+        android:id="@+id/scoreProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Scrollable Text for Question Results -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/scoreSubtitle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="50%"
-            android:textSize="18sp"
-            android:layout_centerInParent="true"
-            android:textStyle="bold"
-            android:id="@+id/score_progress_text"/>
-    </RelativeLayout>
+            android:text="Results will be displayed here."
+            android:textSize="14sp" />
+    </ScrollView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="6 out of 10 questions are correct"
-        android:gravity="center"
-        android:id="@+id/score_subtitle"/>
+    <!-- Finish Button -->
     <Button
+        android:id="@+id/finishBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
         android:text="Finish"
-        android:layout_margin="8dp"
-        android:id="@+id/finish_btn"/>
-
+        android:textColor="@color/white" />
 </LinearLayout>

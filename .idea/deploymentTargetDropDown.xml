@@ -3,6 +3,25 @@
   <component name="deploymentTargetDropDown">
     <value>
       <entry key="ExampleInstrumentedTest">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\ROHAN\.android\avd\Pixel_4_API_33.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-11-15T17:13:39.442020300Z" />
+        </State>
+      </entry>
+      <entry key="LoginActivityTest">
+        <State />
+      </entry>
+      <entry key="SignUpActivityTest">
         <State />
       </entry>
       <entry key="app">
@@ -18,8 +37,11 @@
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-11-05T06:15:47.513476800Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-11-23T16:15:05.783229Z" />
         </State>
+      </entry>
+      <entry key="testLoginWithInvalidEmail()">
+        <State />
       </entry>
     </value>
   </component>
