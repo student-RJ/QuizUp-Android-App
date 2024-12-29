@@ -20,9 +20,8 @@ Development Platform: Android Studio
 
 Backend: Firebase for database and authentication
 
-## Screenshots
-
-
+## Screenshot 
+![Screenshot_2024_1229_130935](https://github.com/user-attachments/assets/f7e0ce89-1afc-419f-a67a-362e89000336)
 ## 🚀 Installation
 Clone the repository:
 
